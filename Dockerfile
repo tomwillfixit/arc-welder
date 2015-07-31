@@ -7,7 +7,7 @@
 #	--memory 512mb \
 #	-v /tmp/.X11-unix:/tmp/.X11-unix \
 #	-e DISPLAY=unix$DISPLAY \
-#	-v /home/tom/Downloads:/root/Downloads \
+#	-v $HOME/Downloads:/root/Downloads \
 #	--device /dev/snd \
 #	--name arcwelder
 #	thshaw/arc_welder
