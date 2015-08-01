@@ -67,7 +67,7 @@ docker ps -a |head -2
 
 Commit these changes to a new image :
 
-docker commit 0f986149884e arc_welder:base
+docker commit <container id> arc-welder:base
 ```
 
  * Almost there.  This is our base image.  You can run this and provide an entrypoint or you can use a Dockerfile. 
@@ -75,7 +75,7 @@ docker commit 0f986149884e arc_welder:base
 Create a Dockerfile with contents : 
 
 ```
-FROM arc_welder:base
+FROM arc-welder:base
 
 ENTRYPOINT [ "/usr/bin/google-chrome" ]
 
@@ -88,7 +88,7 @@ Build a new image :
 
 ```
 
-docker build -t arc_welder:latest .
+docker build -t arc-welder:latest .
 
 ```
 
@@ -104,7 +104,7 @@ docker run -it \
         -v $HOME/Downloads:/root/Downloads \
         --device /dev/snd \ # so we have sound
         --name arcwelder \
-        arc_welder:latest
+        arc-welder:latest
 
 ```
 
