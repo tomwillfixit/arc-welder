@@ -114,9 +114,9 @@ Note : If you want to save the state of any apps you run then you will need to a
 -v $HOME/.config/google-chrome/:/data \ # if you want to save state
 
 ```
-The ARC Welder app will appear.  The first screen will ask you to select a directory to store ARC files in.  Create a directory if required and hit next.
+The ARC Welder app will appear.  
 
-The second screen will prompt for a .apk file.  In the command above we setup this volume : $HOME/Downloads:/root/Downloads.  On your host you can download a .apk file from http://www.apkmirror.com/ and then select this in the ARC Welder gui.
+You will be prompted for a .apk file.  In the command above we setup this volume : $HOME/Downloads:/root/Downloads.  On your host you can download a .apk file from http://www.apkmirror.com/ and then select this in the ARC Welder gui.
 
 That's it.  
 
