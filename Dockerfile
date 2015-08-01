@@ -12,7 +12,7 @@
 #	--name arcwelder
 #	thshaw/arc_welder
 
-FROM thshaw/arc_welder
+FROM thshaw/arc-welder
 
 MAINTAINER thshaw 
 
