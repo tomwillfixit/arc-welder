@@ -23,6 +23,7 @@ docker run -it \
 	-e DISPLAY=unix$DISPLAY \
 	-v $HOME/Downloads:/root/Downloads \
 	--device /dev/snd \ # so we have sound
+	--security-opt seccomp:unconfined \
   	--entrypoint /bin/bash \
 	--name chrome \
 	jess/chrome:latest
@@ -103,6 +104,7 @@ docker run -it \
         -e DISPLAY=unix$DISPLAY \
         -v $HOME/Downloads:/root/Downloads \
         --device /dev/snd \ # so we have sound
+	--security-opt seccomp:unconfined \
         --name arcwelder \
         arc-welder:latest
 
